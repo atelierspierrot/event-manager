@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>EventManager\EventManager | Event Manager</title>
+                    <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="../classes.html">Classes</a></li>
+                            <li><a href="../namespaces.html">Namespaces</a></li>
+                        <li><a href="../interfaces.html">Interfaces</a></li>
+            <li><a href="../traits.html">Traits</a></li>
+            <li><a href="../doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">Event Manager</div>
+
+            <div class="type">Class</div>
+    <h1><a href="../EventManager.html">EventManager</a>\EventManager</h1>
+    </div>
+        <div class="content">
+                <p>    class
+    <strong>EventManager</strong>        implements
+        <a href="../EventManager/EventManagerInterface.html"><abbr title="EventManager\EventManagerInterface">EventManagerInterface</abbr></a></p>
+
+            <div class="description">
+            <p>Class EventManager</p>
+            <p>This is a global event handling manager. It will store
+all <em>listeners</em> and <em>subscribers</em> for specific events
+in an instance of <code>EventObserverStorage</code> and trigger
+the observers methods when an event is fired.</p>
+        </div>
+    
+            <h2>Constants</h2>
+
+            <table>
+                    <tr>
+                <td>EVENT_CLASSNAME</td>
+                <td class="last">
+                    <p><em>The default event class name</em></p>
+                    <p>
+</p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method___construct">__construct</a>()
+                    <p>Initialize the observers storage registry</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_setEventClass">setEventClass</a>($name)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_getEventClass">getEventClass</a>()
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <abbr title="EventManager\$this">$this</abbr>
+                </td>
+                <td class="last">
+                    <a href="#method_addListener">addListener</a>(<abbr title="EventManager\$event">$event</abbr> $event, <abbr title="EventManager\$callback">$callback</abbr> $callback)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <abbr title="EventManager\$this">$this</abbr>
+                </td>
+                <td class="last">
+                    <a href="#method_removeListener">removeListener</a>(<abbr title="EventManager\$event">$event</abbr> $event, <abbr title="EventManager\$callback">$callback</abbr> $callback)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    bool
+                </td>
+                <td class="last">
+                    <a href="#method_hasListeners">hasListeners</a>(<abbr title="EventManager\$event">$event</abbr> $event)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    array|null
+                </td>
+                <td class="last">
+                    <a href="#method_getListeners">getListeners</a>(<abbr title="EventManager\$event">$event</abbr> $event)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <abbr title="EventManager\$this">$this</abbr>
+                </td>
+                <td class="last">
+                    <a href="#method_addSubscriber">addSubscriber</a>(<a href="../EventManager/EventSubscriberInterface.html"><abbr title="EventManager\EventSubscriberInterface">EventSubscriberInterface</abbr></a> $subscriber)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <abbr title="EventManager\$this">$this</abbr>
+                </td>
+                <td class="last">
+                    <a href="#method_removeSubscriber">removeSubscriber</a>(<a href="../EventManager/EventSubscriberInterface.html"><abbr title="EventManager\EventSubscriberInterface">EventSubscriberInterface</abbr></a> $subscriber)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <abbr title="EventManager\$this">$this</abbr>
+                </td>
+                <td class="last">
+                    <a href="#method_triggerEvent">triggerEvent</a>(string $event_name, mixed $subject = null)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method___construct">
+        <div class="location">at line 56</div>
+        <code>            public            
+    <strong>__construct</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Initialize the observers storage registry</p>
+        <p>
+</p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_setEventClass">
+        <div class="location">at line 62</div>
+        <code>            public            
+    <strong>setEventClass</strong>($name)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getEventClass">
+        <div class="location">at line 77</div>
+        <code>            public            
+    <strong>getEventClass</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_addListener">
+        <div class="location">at line 88</div>
+        <code>            public            <abbr title="EventManager\$this">$this</abbr>
+    <strong>addListener</strong>(<abbr title="EventManager\$event">$event</abbr> $event, <abbr title="EventManager\$callback">$callback</abbr> $callback)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="EventManager\$event">$event</abbr></td>
+                <td>$event</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><abbr title="EventManager\$callback">$callback</abbr></td>
+                <td>$callback</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><abbr title="EventManager\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="http://php.net/Exception"><abbr title="Exception">Exception</abbr></a></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_removeListener">
+        <div class="location">at line 103</div>
+        <code>            public            <abbr title="EventManager\$this">$this</abbr>
+    <strong>removeListener</strong>(<abbr title="EventManager\$event">$event</abbr> $event, <abbr title="EventManager\$callback">$callback</abbr> $callback)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="EventManager\$event">$event</abbr></td>
+                <td>$event</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td><abbr title="EventManager\$callback">$callback</abbr></td>
+                <td>$callback</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><abbr title="EventManager\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="http://php.net/Exception"><abbr title="Exception">Exception</abbr></a></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_hasListeners">
+        <div class="location">at line 115</div>
+        <code>            public            bool
+    <strong>hasListeners</strong>(<abbr title="EventManager\$event">$event</abbr> $event)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="EventManager\$event">$event</abbr></td>
+                <td>$event</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>bool</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_getListeners">
+        <div class="location">at line 124</div>
+        <code>            public            array|null
+    <strong>getListeners</strong>(<abbr title="EventManager\$event">$event</abbr> $event)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="EventManager\$event">$event</abbr></td>
+                <td>$event</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>array|null</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_addSubscriber">
+        <div class="location">at line 137</div>
+        <code>            public            <abbr title="EventManager\$this">$this</abbr>
+    <strong>addSubscriber</strong>(<a href="../EventManager/EventSubscriberInterface.html"><abbr title="EventManager\EventSubscriberInterface">EventSubscriberInterface</abbr></a> $subscriber)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="../EventManager/EventSubscriberInterface.html"><abbr title="EventManager\EventSubscriberInterface">EventSubscriberInterface</abbr></a></td>
+                <td>$subscriber</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><abbr title="EventManager\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="http://php.net/Exception"><abbr title="Exception">Exception</abbr></a></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_removeSubscriber">
+        <div class="location">at line 155</div>
+        <code>            public            <abbr title="EventManager\$this">$this</abbr>
+    <strong>removeSubscriber</strong>(<a href="../EventManager/EventSubscriberInterface.html"><abbr title="EventManager\EventSubscriberInterface">EventSubscriberInterface</abbr></a> $subscriber)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="../EventManager/EventSubscriberInterface.html"><abbr title="EventManager\EventSubscriberInterface">EventSubscriberInterface</abbr></a></td>
+                <td>$subscriber</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><abbr title="EventManager\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="http://php.net/Exception"><abbr title="Exception">Exception</abbr></a></td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_triggerEvent">
+        <div class="location">at line 173</div>
+        <code>            public            <abbr title="EventManager\$this">$this</abbr>
+    <strong>triggerEvent</strong>(string $event_name, mixed $subject = null)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string</td>
+                <td>$event_name</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$subject</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><abbr title="EventManager\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>
