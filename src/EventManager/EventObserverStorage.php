@@ -29,6 +29,7 @@ namespace EventManager;
  * in an `EventObserverProxy` object and indexed with a special
  * hash allowing to retrieve a defined observer.
  *
+ * @author  piwi <me@e-piwi.fr>
  */
 class EventObserverStorage
     extends \ArrayObject

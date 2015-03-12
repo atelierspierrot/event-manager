@@ -24,6 +24,8 @@ namespace EventManager;
 
 /**
  * Interface EventManagerAwareInterface
+ *
+ * @author  piwi <me@e-piwi.fr>
  */
 interface EventManagerAwareInterface
 {

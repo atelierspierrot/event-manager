@@ -34,6 +34,7 @@ namespace EventManager;
  * -    an array like `array( class , method )` to call a specific method
  * -    a closure to call when the event is fired
  *
+ * @author  piwi <me@e-piwi.fr>
  */
 class EventObserverProxy
     implements ObserverInterface

@@ -43,6 +43,7 @@ namespace EventManager;
  * All aliases return the object itself for method chaining and
  * will throw any caught exception.
  *
+ * @author  piwi <me@e-piwi.fr>
  */
 class EventManagerExtended
     extends EventManager

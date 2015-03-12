@@ -24,6 +24,8 @@ namespace EventManager;
 
 /**
  * Interface StdEventInterface
+ *
+ * @author  piwi <me@e-piwi.fr>
  */
 interface StdEventInterface
 {

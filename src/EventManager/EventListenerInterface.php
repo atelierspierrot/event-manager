@@ -24,6 +24,8 @@ namespace EventManager;
 
 /**
  * Interface EventListenerInterface
+ *
+ * @author  piwi <me@e-piwi.fr>
  */
 interface EventListenerInterface
     extends ObserverInterface

@@ -30,6 +30,7 @@ namespace EventManager;
  * in an instance of `EventObserverStorage` and trigger
  * the observers methods when an event is fired.
  *
+ * @author  piwi <me@e-piwi.fr>
  */
 class EventManager
     implements EventManagerInterface
