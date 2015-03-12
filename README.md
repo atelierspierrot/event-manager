@@ -2,7 +2,7 @@ Event manager
 =============
 
 [![documentation](http://img.ateliers-pierrot-static.fr/read-the-doc.svg)](http://docs.ateliers-pierrot.fr/event-manager/)
-The events manager library package of Les Ateliers Pierrot
+The events manager package of Les Ateliers Pierrot
 
 
 Installation
