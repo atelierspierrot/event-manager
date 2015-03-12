@@ -24,6 +24,8 @@ namespace EventManager;
 
 /**
  * Class StdEvent
+ *
+ * @author  piwi <me@e-piwi.fr>
  */
 class StdEvent
     implements StdEventInterface

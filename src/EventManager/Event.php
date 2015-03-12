@@ -24,6 +24,8 @@ namespace EventManager;
 
 /**
  * Class Event
+ *
+ * @author  piwi <me@e-piwi.fr>
  */
 class Event
     extends StdEvent

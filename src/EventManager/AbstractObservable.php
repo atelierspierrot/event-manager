@@ -26,6 +26,8 @@ use \Library\Helper\Code as CodeHelper;
 
 /**
  * Class AbstractObservable
+ *
+ * @author  piwi <me@e-piwi.fr>
  */
 abstract class AbstractObservable
     implements ObservableInterface

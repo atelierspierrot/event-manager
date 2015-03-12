@@ -24,6 +24,8 @@ namespace EventManager;
 
 /**
  * Interface ObserverInterface
+ *
+ * @author  piwi <me@e-piwi.fr>
  */
 interface ObserverInterface
 {

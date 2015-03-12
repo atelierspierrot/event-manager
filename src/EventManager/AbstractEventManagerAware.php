@@ -27,6 +27,8 @@ namespace EventManager;
  *
  * This defines a base class for objects that must handle
  * an event manager instance.
+ *
+ * @author  piwi <me@e-piwi.fr>
  */
 abstract class AbstractEventManagerAware
     implements EventManagerAwareInterface
