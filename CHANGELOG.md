@@ -1,6 +1,6 @@
 # CHANGELOG
 
-This is the changelog of the **atelierspierrot/library** package.
+This is the changelog of the **atelierspierrot/event-manager** package.
 
 You may find the original remote repository to <https://github.com/atelierspierrot/event-manager.git>.
 The `#xxx` marks of this changelog may reference a bug ticket you can find at 
