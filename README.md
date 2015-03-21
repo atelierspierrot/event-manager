@@ -1,6 +1,7 @@
 Event manager
 =============
 
+[![Code Climate](http://codeclimate.com/github/atelierspierrot/event-manager/badges/gpa.svg)](http://codeclimate.com/github/atelierspierrot/event-manager)
 [![documentation](http://img.ateliers-pierrot-static.fr/read-the-doc.svg)](http://docs.ateliers-pierrot.fr/event-manager/)
 The events manager package of Les Ateliers Pierrot
 
