@@ -2,7 +2,7 @@
 /**
  * This file is part of the Event Manager package.
  *
- * Copyright (c) 2015 Pierre Cassat <me@e-piwi.fr> and contributors
+ * Copyright (c) 2015-2016 Pierre Cassat <me@e-piwi.fr> and contributors
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -70,7 +70,4 @@ interface EventManagerInterface
      * @return mixed
      */
     public function triggerEvent($event_name, $subject = null);
-
 }
-
-// Endfile
