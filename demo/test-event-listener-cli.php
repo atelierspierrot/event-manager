@@ -2,19 +2,21 @@
 <?php
 
 #############
-ini_set('display_errors',1);
+ini_set('display_errors', 1);
 error_reporting(E_ALL & ~E_STRICT);
 require_once __DIR__.'/../vendor/autoload.php';
 #############
 
 //$n = isset($argv[1]) ? $argv[1] : '0';
 
-function writeln($line_in) {
+function writeln($line_in)
+{
     echo $line_in.PHP_EOL;
 }
 
 
-class TestObservable extends \EventManager\AbstractObservable implements \EventManager\ObservableInterface {
+class TestObservable extends \EventManager\AbstractObservable implements \EventManager\ObservableInterface
+{
 
     public function __construct($name = 'Anonymous')
     {
@@ -27,10 +29,10 @@ class TestObservable extends \EventManager\AbstractObservable implements \EventM
         $this->name = $name;
         return $this;
     }
-
 }
 
-class TestEventListener implements \EventManager\ObserverInterface {
+class TestEventListener implements \EventManager\ObserverInterface
+{
 
     public function handleEvent(\EventManager\EventInterface $event)
     {
@@ -39,22 +41,24 @@ class TestEventListener implements \EventManager\ObserverInterface {
             .' :: name has changed to '.$event->getSubject()->name
         );
     }
-
 }
 
-class TestEventListenerBis extends TestEventListener {}
+class TestEventListenerBis extends TestEventListener
+{
+}
 
-class TestEventListenerStopper extends TestEventListener {
+class TestEventListenerStopper extends TestEventListener
+{
 
     public function handleEvent(\EventManager\EventInterface $event)
     {
         parent::handleEvent($event);
         $event->stopPropagation();
     }
-
 }
 
-class TestEventListenerCallback {
+class TestEventListenerCallback
+{
 
     public function myMethod(\EventManager\EventInterface $event)
     {
@@ -63,10 +67,10 @@ class TestEventListenerCallback {
             .' :: name has changed to '.$event->getSubject()->name
         );
     }
-
 }
 
-class TestEventListenerError {
+class TestEventListenerError
+{
 
     public function handleEvent()
     {
@@ -74,10 +78,10 @@ class TestEventListenerError {
             .' :: must not throw an error ...'
         );
     }
-
 }
 
-class TestSubscriber implements \EventManager\EventSubscriberInterface {
+class TestSubscriber implements \EventManager\EventSubscriberInterface
+{
 
     public static function getSubscribedEvents()
     {
@@ -96,10 +100,10 @@ class TestSubscriber implements \EventManager\EventSubscriberInterface {
     {
         writeln('['.__CLASS__.'] ::event2 :: name has changed to '.$event->getSubject()->name);
     }
-
 }
 
-class TestSubscriberError implements \EventManager\EventSubscriberInterface {
+class TestSubscriberError implements \EventManager\EventSubscriberInterface
+{
 
     public static function getSubscribedEvents()
     {
@@ -112,7 +116,6 @@ class TestSubscriberError implements \EventManager\EventSubscriberInterface {
     {
         writeln('['.__CLASS__.'] ::event3 :: name has changed to '.$event->getSubject()->name);
     }
-
 }
 
 writeln('BEGIN OF TEST SET 1');
@@ -142,7 +145,7 @@ $obj
 ;
 
 writeln('- add an observer as a Closure');
-$listener3 = function($event){writeln('[closure]'
+$listener3 = function ($event) {writeln('[closure]'
     .' :: triggering event '.$event->getName()
     .' :: name has changed to '.$event->getSubject()->name
 );};
@@ -161,7 +164,7 @@ $obj
 writeln('- add an observer as a dynamic function');
 $obj
     ->setName('name 6')
-    ->attachObserver(function($event){writeln('[dynamic callback]'
+    ->attachObserver(function ($event) {writeln('[dynamic callback]'
         .' :: triggering event '.$event->getName()
         .' :: name has changed to '.$event->getSubject()->name
     );})
@@ -257,7 +260,7 @@ writeln('- triggering event my.event.2');
 $obj->setName('name 3');
 $manager->triggerEvent('my.event.2', $obj);
 
-$listener3 = function($event){writeln('[closure]'
+$listener3 = function ($event) {writeln('[closure]'
     .' :: triggering event '.$event->getName()
     .' :: name has changed to '.$event->getSubject()->name
 );};
@@ -265,7 +268,7 @@ $listener4 = new TestEventListenerCallback();
 $manager
     ->addListener('my.event.4', $listener3)
     ->addListener('my.event.4', array($listener4, 'myMethod'))
-    ->addListener('my.event.4', function($event){writeln('[dynamic callback]'
+    ->addListener('my.event.4', function ($event) {writeln('[dynamic callback]'
         .' :: triggering event '.$event->getName()
         .' :: name has changed to '.$event->getSubject()->name
     );})

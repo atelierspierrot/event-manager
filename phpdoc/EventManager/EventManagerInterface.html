@@ -1,140 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="robots" content="index, follow, all" />
-        <title>EventManager\EventManagerInterface | Event Manager</title>
-                    <link rel="stylesheet" type="text/css" href="../stylesheet.css">
-                            </head>
-        <body id="class">
-            <div class="header">
-        <ul>
-            <li><a href="../classes.html">Classes</a></li>
-                            <li><a href="../namespaces.html">Namespaces</a></li>
-                        <li><a href="../interfaces.html">Interfaces</a></li>
-            <li><a href="../traits.html">Traits</a></li>
-            <li><a href="../doc-index.html">Index</a></li>
-            
-        </ul>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>EventManager\EventManagerInterface | Event Manager</title>
 
-        <div id="title">Event Manager</div>
+            <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/sami.css">
+        <script src="../js/jquery-1.11.1.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/typeahead.min.js"></script>
+        <script src="../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
 
-            <div class="type">Interface</div>
-    <h1><a href="../EventManager.html">EventManager</a>\EventManagerInterface</h1>
+    <body id="class" data-name="class:EventManager_EventManagerInterface" data-root-path="../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
     </div>
-        <div class="content">
-                <p>    interface
-    <strong>EventManagerInterface</strong></p>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">Event Manager</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../classes.html">Classes</a></li>
+                                            <li><a href="../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../interfaces.html">Interfaces</a></li>
+                    <li><a href="../traits.html">Traits</a></li>
+                    <li><a href="../doc-index.html">Index</a></li>
+                    <li><a href="../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">interface</span></li>
+                                                            <li><a href="../EventManager.html">EventManager</a></li>
+    
+                <li>EventManagerInterface</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>EventManagerInterface</h1>
+    </div>
+
+    <p>    interface
+    <strong>EventManagerInterface</strong>
+</p>
 
             <div class="description">
-            <p>Interface EventManagerInterface</p>
-            <p>
-</p>
-        </div>
+            <p>Interface EventManagerInterface</p>                    </div>
+    
     
     
     
             <h2>Methods</h2>
 
-            <table>
-                    <tr>
-                <td class="type">
-                    bool
-                </td>
-                <td class="last">
-                    <a href="#method_hasListeners">hasListeners</a>(<abbr title="EventManager\$event_name">$event_name</abbr> $event_name)
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    array|null
-                </td>
-                <td class="last">
-                    <a href="#method_getListeners">getListeners</a>(<abbr title="EventManager\$event_name">$event_name</abbr> $event_name)
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
                     
-                </td>
-                <td class="last">
-                    <a href="#method_addListener">addListener</a>(<abbr title="EventManager\$event">$event</abbr> $event, <abbr title="EventManager\$callback">$callback</abbr> $callback)
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasListeners">hasListeners</a>($event_name)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     
-                </td>
-                <td class="last">
-                    <a href="#method_removeListener">removeListener</a>(<abbr title="EventManager\$event">$event</abbr> $event, <abbr title="EventManager\$callback">$callback</abbr> $callback)
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
+    array|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getListeners">getListeners</a>($event_name)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     
-                </td>
-                <td class="last">
-                    <a href="#method_addSubscriber">addSubscriber</a>(<a href="../EventManager/EventSubscriberInterface.html"><abbr title="EventManager\EventSubscriberInterface">EventSubscriberInterface</abbr></a> $subscriber)
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addListener">addListener</a>($event, $callback)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     
-                </td>
-                <td class="last">
-                    <a href="#method_removeSubscriber">removeSubscriber</a>(<a href="../EventManager/EventSubscriberInterface.html"><abbr title="EventManager\EventSubscriberInterface">EventSubscriberInterface</abbr></a> $subscriber)
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    mixed
-                </td>
-                <td class="last">
-                    <a href="#method_triggerEvent">triggerEvent</a>(string $event_name, mixed $subject = null)
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-            </table>
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_removeListener">removeListener</a>($event, $callback)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addSubscriber">addSubscriber</a>(
+    <abbr title="EventManager\EventManager\EventSubscriberInterface">EventSubscriberInterface</abbr> $subscriber)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_removeSubscriber">removeSubscriber</a>(
+    <abbr title="EventManager\EventManager\EventSubscriberInterface">EventSubscriberInterface</abbr> $subscriber)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_triggerEvent">triggerEvent</a>(
+    string $event_name, 
+    mixed $subject = null)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
 
 
         <h2>Details</h2>
 
-                        <h3 id="method_hasListeners">
-        <div class="location">at line 35</div>
-        <code>            public            bool
-    <strong>hasListeners</strong>(<abbr title="EventManager\$event_name">$event_name</abbr> $event_name)</code>
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_hasListeners">
+        <div class="location">at line 37</div>
+        <code>                    
+    bool
+    <strong>hasListeners</strong>($event_name)</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
-                <td><abbr title="EventManager\$event_name">$event_name</abbr></td>
+                <td></td>
                 <td>$event_name</td>
                 <td>
 </td>
@@ -144,9 +197,10 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td>bool</td>
+            <td>
+    bool</td>
             <td>
 </td>
         </tr>
@@ -157,22 +211,21 @@
                     </div>
     </div>
 
-                <h3 id="method_getListeners">
-        <div class="location">at line 41</div>
-        <code>            public            array|null
-    <strong>getListeners</strong>(<abbr title="EventManager\$event_name">$event_name</abbr> $event_name)</code>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getListeners">
+        <div class="location">at line 43</div>
+        <code>                    
+    array|null
+    <strong>getListeners</strong>($event_name)</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
-                <td><abbr title="EventManager\$event_name">$event_name</abbr></td>
+                <td></td>
                 <td>$event_name</td>
                 <td>
 </td>
@@ -182,9 +235,10 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td>array|null</td>
+            <td>
+    array|null</td>
             <td>
 </td>
         </tr>
@@ -195,28 +249,27 @@
                     </div>
     </div>
 
-                <h3 id="method_addListener">
-        <div class="location">at line 47</div>
-        <code>            public            
-    <strong>addListener</strong>(<abbr title="EventManager\$event">$event</abbr> $event, <abbr title="EventManager\$callback">$callback</abbr> $callback)</code>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addListener">
+        <div class="location">at line 49</div>
+        <code>                    
+    
+    <strong>addListener</strong>($event, $callback)</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
-                <td><abbr title="EventManager\$event">$event</abbr></td>
+                <td></td>
                 <td>$event</td>
                 <td>
 </td>
             </tr>
                     <tr>
-                <td><abbr title="EventManager\$callback">$callback</abbr></td>
+                <td></td>
                 <td>$callback</td>
                 <td>
 </td>
@@ -229,28 +282,27 @@
                     </div>
     </div>
 
-                <h3 id="method_removeListener">
-        <div class="location">at line 53</div>
-        <code>            public            
-    <strong>removeListener</strong>(<abbr title="EventManager\$event">$event</abbr> $event, <abbr title="EventManager\$callback">$callback</abbr> $callback)</code>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_removeListener">
+        <div class="location">at line 55</div>
+        <code>                    
+    
+    <strong>removeListener</strong>($event, $callback)</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
-                <td><abbr title="EventManager\$event">$event</abbr></td>
+                <td></td>
                 <td>$event</td>
                 <td>
 </td>
             </tr>
                     <tr>
-                <td><abbr title="EventManager\$callback">$callback</abbr></td>
+                <td></td>
                 <td>$callback</td>
                 <td>
 </td>
@@ -263,22 +315,23 @@
                     </div>
     </div>
 
-                <h3 id="method_addSubscriber">
-        <div class="location">at line 58</div>
-        <code>            public            
-    <strong>addSubscriber</strong>(<a href="../EventManager/EventSubscriberInterface.html"><abbr title="EventManager\EventSubscriberInterface">EventSubscriberInterface</abbr></a> $subscriber)</code>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addSubscriber">
+        <div class="location">at line 60</div>
+        <code>                    
+    
+    <strong>addSubscriber</strong>(
+    <abbr title="EventManager\EventManager\EventSubscriberInterface">EventSubscriberInterface</abbr> $subscriber)</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
-                <td><a href="../EventManager/EventSubscriberInterface.html"><abbr title="EventManager\EventSubscriberInterface">EventSubscriberInterface</abbr></a></td>
+                <td>
+    <abbr title="EventManager\EventManager\EventSubscriberInterface">EventSubscriberInterface</abbr></td>
                 <td>$subscriber</td>
                 <td>
 </td>
@@ -291,22 +344,23 @@
                     </div>
     </div>
 
-                <h3 id="method_removeSubscriber">
-        <div class="location">at line 63</div>
-        <code>            public            
-    <strong>removeSubscriber</strong>(<a href="../EventManager/EventSubscriberInterface.html"><abbr title="EventManager\EventSubscriberInterface">EventSubscriberInterface</abbr></a> $subscriber)</code>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_removeSubscriber">
+        <div class="location">at line 65</div>
+        <code>                    
+    
+    <strong>removeSubscriber</strong>(
+    <abbr title="EventManager\EventManager\EventSubscriberInterface">EventSubscriberInterface</abbr> $subscriber)</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
-                <td><a href="../EventManager/EventSubscriberInterface.html"><abbr title="EventManager\EventSubscriberInterface">EventSubscriberInterface</abbr></a></td>
+                <td>
+    <abbr title="EventManager\EventManager\EventSubscriberInterface">EventSubscriberInterface</abbr></td>
                 <td>$subscriber</td>
                 <td>
 </td>
@@ -319,28 +373,31 @@
                     </div>
     </div>
 
-                <h3 id="method_triggerEvent">
-        <div class="location">at line 70</div>
-        <code>            public            mixed
-    <strong>triggerEvent</strong>(string $event_name, mixed $subject = null)</code>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_triggerEvent">
+        <div class="location">at line 72</div>
+        <code>                    
+    mixed
+    <strong>triggerEvent</strong>(
+    string $event_name, 
+    mixed $subject = null)</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$event_name</td>
                 <td>
 </td>
             </tr>
                     <tr>
-                <td>mixed</td>
+                <td>
+    mixed</td>
                 <td>$subject</td>
                 <td>
 </td>
@@ -350,9 +407,10 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td>mixed</td>
+            <td>
+    mixed</td>
             <td>
 </td>
         </tr>
@@ -363,10 +421,17 @@
                     </div>
     </div>
 
+            </div>
+            </div>
+
     
             </div>
-            <div id="footer">
-        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
     </div>
     </body>
+
 </html>
